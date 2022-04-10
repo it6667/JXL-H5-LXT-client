@@ -1,11 +1,53 @@
+@import "../../css/base.css";
 #nav_bar {
   width: 100%;
   height: 140px;
-  background-color: chartreuse;
 }
-#nav_bar #nav_bar > .cotent {
+#nav_bar .cotent {
   height: 100%;
-  width: 1205px;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+#nav_bar .cotent .top {
+  flex: 1;
+  display: flex;
+}
+#nav_bar .cotent .top .left {
+  flex: 1;
+}
+#nav_bar .cotent .top .left .logo {
+  width: 193px;
+  height: 65px;
+}
+#nav_bar .cotent .top .left .logo a {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  background-image: url(../asset/imags/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center center;
+}
+#nav_bar .cotent .top .center {
+  flex: 2;
+  background-color: grey;
+}
+#nav_bar .cotent .top .right {
+  flex: 1;
+  background-color: blueviolet;
+}
+#nav_bar .cotent .bottom {
+  height: 40px;
+  background-color: cornflowerblue;
+  display: flex;
+}
+#nav_bar .cotent .bottom .left {
+  flex: 1;
+  background-color: oldlace;
+}
+#nav_bar .cotent .bottom .right {
+  flex: 1;
+  background-color: cadetblue;
 }
 /*# sourceMappingURL=index.css.map */
