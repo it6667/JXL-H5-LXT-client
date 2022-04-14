@@ -1,7 +1,82 @@
 @import "../../../css/base.css";
-.titles {
+.like_lb {
   height: 360px;
-  min-width: 1260px;
+  min-width: 1205px;
   background-color: oldlace;
+  position: relative;
+}
+.like_lb .titles {
+  width: 280px;
+  height: 274px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  border-radius: 4px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc((100% - 1205px) / 2);
+  overflow-y: auto;
+  z-index: 999;
+  scrollbar-width: none;
+  /* firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+.like_lb .titles::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
+}
+.like_lb .titles li {
+  padding: 0 10px 0 20px;
+  position: relative;
+}
+.like_lb .titles li.current a,
+.like_lb .titles li:hover a {
+  color: #51b257;
+}
+.like_lb .titles li.current::after,
+.like_lb .titles li:hover::after {
+  content: "";
+  border: 7px solid transparent;
+  border-right-color: #51b257;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.like_lb .titles li a {
+  font-size: 16px;
+  color: #E0E0E0;
+  display: block;
+  line-height: 40px;
+}
+.like_lb .images {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  position: relative;
+}
+.like_lb .images li {
+  width: 100%;
+  height: 100%;
+  background-color: darkcyan;
+  position: absolute;
+  display: none;
+}
+.like_lb .images li.current {
+  display: block;
+}
+.like_lb .images li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: greenyellow;
+}
+.like_lb .images li a img {
+  width: 1205px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */

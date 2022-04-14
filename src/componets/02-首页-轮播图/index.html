@@ -9,11 +9,51 @@
 <body>
 <div class="like_lb">
     <ul class="titles">
-
+        <li><a  href="#">撩课-标题-1</a></li>
+        <li><a href="#">撩课-标题-2</a></li>
+        <li><a href="#">撩课-标题-3</a></li>
+        <li><a href="#">撩课-标题-4</a></li>
+        <li class="current"><a href="#">撩课-标题-5</a></li>
     </ul>
     <ul class="images">
-
+        <li><a class="lb_bgc" href="#"><img src="../../../asset/imags/banner-1.jpg" alt="#"></a></li>
+        <li><a class="lb_bgc" href="#"><img src="../../../asset/imags/banner-2.jpg" alt="#"></a></li>
+        <li><a class="lb_bgc" href="#"><img src="../../../asset/imags/banner-3.jpg" alt="#"></a></li>
+        <li><a class="lb_bgc" href="#"><img src="../../../asset/imags/banner-4.jpg" alt="#"></a></li>
+        <li  class="current"><a class="lb_bgc" href="#"><img src="../../../asset/imags/banner-5.jpg" alt="#"></a></li>
     </ul>
 </div>
+<script src="./grade.js"></script>
+<script>
+    window.addEventListener('load', function () {
+        Grade(document.querySelectorAll('.lb_bgc'))
+    })
+</script>
+<script>
+
+    let currentIndex = 0;
+
+    // 轮播图切换联动效果
+    // 1. 获取所有的标题  以及  所有的 图片
+    let titles = document.querySelectorAll(".like_lb>.titles>li");
+    let images = document.querySelectorAll(".like_lb>.images>li")
+
+    // let xx = document.getElementById("xx");
+
+
+    titles.forEach((title, index) => {
+        title.onmouseover = function () {
+            titles[currentIndex].className = ""
+            images[currentIndex].className = ""
+
+            title.className = "current"
+            images[index].className = "current"
+
+            currentIndex = index
+        }
+    })
+
+
+</script>
 </body>
 </html>
