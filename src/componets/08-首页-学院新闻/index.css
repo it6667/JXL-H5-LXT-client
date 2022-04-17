@@ -1,0 +1,29 @@
+@import "../../../css/base.css";
+.new_card {
+  width: 500px;
+  box-shadow: 1px 8px 10px 4px grey;
+}
+.new_card ul {
+  padding: 5px 10px;
+}
+.new_card ul li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 36px;
+}
+.new_card ul li a {
+  color: #333;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.new_card ul li a:hover {
+  color: #51b257;
+}
+.new_card ul li span {
+  font-size: 15px;
+  color: #999;
+  min-width: 190px;
+}
+/*# sourceMappingURL=index.css.map */
