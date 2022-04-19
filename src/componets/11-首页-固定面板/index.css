@@ -1,0 +1,55 @@
+@import "../../../css/base.css";
+.fix_bane {
+  width: 50px;
+  height: 200px;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fix_bane .contact,
+.fix_bane .app,
+.fix_bane .back_top {
+  width: 50px;
+  height: 50px;
+}
+.fix_bane .contact {
+  margin-bottom: 30px;
+  background-image: url("../../../asset/images/layout_css_sprites2.png");
+  background-position: -83px -177px;
+}
+.fix_bane .contact:hover {
+  background-position: -11px -174px;
+}
+.fix_bane .app {
+  background-image: url("../../../asset/images/layout_css_sprites.png");
+  background-position: -4px -94px;
+  position: relative;
+}
+.fix_bane .app:hover {
+  background-color: #dddddd;
+}
+.fix_bane .app:hover .ewm_pane {
+  display: block;
+}
+.fix_bane .app .ewm_pane {
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 0 10px #ccc;
+  position: absolute;
+  left: -125px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+.fix_bane .app .ewm_pane img {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.fix_bane .back_top {
+  background-image: url("../../../asset/images/layout_css_sprites.png");
+  background-position: -166px 2px;
+}
+/*# sourceMappingURL=index.css.map */

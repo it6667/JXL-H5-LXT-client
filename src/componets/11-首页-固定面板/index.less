@@ -1,0 +1,60 @@
+@import "../../../css/base.css";
+@import "../../../config/colorConfig";
+
+.fix_bane{
+  width: 50px;
+  height: 200px;
+  //background-color: oldlace;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  .contact,
+  .app,
+  .back_top
+  {
+    width: 50px;
+    height: 50px;
+    //background-color: orange;
+  }
+  .contact{
+    margin-bottom: 30px;
+    background-image: url("../../../asset/images/layout_css_sprites2.png");
+    background-position:-83px -177px;
+    &:hover{
+      background-position: -11px -174px;
+    }
+  }
+  .app{
+    background-image: url("../../../asset/images/layout_css_sprites.png");
+    background-position:-4px -94px;
+    position: relative;
+    &:hover{
+      background-color: #dddddd;
+      .ewm_pane{
+        display: block;
+      }
+    }
+    .ewm_pane{
+      width: 120px;
+      height: 120px;
+      box-shadow: 0 0 10px #ccc;
+      position: absolute;
+      left: -125px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+
+      img{
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .back_top{
+    background-image: url("../../../asset/images/layout_css_sprites.png");
+    background-position:-166px 2px;
+  }
+}

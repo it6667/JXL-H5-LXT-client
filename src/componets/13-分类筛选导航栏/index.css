@@ -1,0 +1,33 @@
+@import "../../../css/base.css";
+.select_bar {
+  min-width: 1205px;
+  height: 40px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.04);
+  background: linear-gradient(#f7f6f8, #fff 20%);
+}
+.select_bar .content {
+  height: 100%;
+}
+.select_bar .content dl {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.select_bar .content dl dt {
+  color: #949fab;
+  font-size: 16px;
+}
+.select_bar .content dl dd {
+  color: #6b6578;
+  margin-left: 15px;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 2px solid transparent;
+}
+.select_bar .content dl dd.selected,
+.select_bar .content dl dd:hover {
+  color: #51b257;
+  border: 2px solid #51b257;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=index.css.map */

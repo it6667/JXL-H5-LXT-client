@@ -1,0 +1,41 @@
+@import "../../../css/base.css";
+@import "../../../config/colorConfig";
+
+.select_bar{
+  min-width: 1205px;
+  height: 40px;
+  //background-color: oldlace;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.04);
+  background: linear-gradient(#f7f6f8,#fff 20%);
+  .content{
+    height: 100%;
+    //background-color: orange;
+
+    dl{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      //background-color: orchid;
+
+      dt{
+        color: #949fab;
+        font-size: 16px;
+      }
+
+      dd{
+        color: #6b6578;
+        margin-left: 15px;
+        line-height: 30px;
+        padding: 0 10px;
+        border: 2px solid transparent;
+        &.selected,
+        &:hover{
+          color: @themeColor;
+
+            border: 2px solid @themeColor;
+            border-radius: 15px;
+        }
+      }
+    }
+  }
+}

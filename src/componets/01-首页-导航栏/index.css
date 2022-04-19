@@ -188,7 +188,7 @@
   display: block;
   background-color: #51b257;
 }
-#nav_bar .cotent .bottom .left a {
+#nav_bar .cotent .bottom .left .menu li > a {
   height: 100%;
   padding: 0 20px;
   font-size: 18px;
