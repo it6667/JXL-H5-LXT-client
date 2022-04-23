@@ -1,9 +1,12 @@
 @import "../../../css/base.css";
 @import "../../../config/colorConfig";
-
 .select_bar{
   min-width: 1205px;
   height: 40px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
   //background-color: oldlace;
   box-shadow: 0 5px 5px 0 rgba(0,0,0,.04);
   background: linear-gradient(#f7f6f8,#fff 20%);
@@ -32,8 +35,8 @@
         &:hover{
           color: @themeColor;
 
-            border: 2px solid @themeColor;
-            border-radius: 15px;
+          border: 2px solid @themeColor;
+          border-radius: 15px;
         }
       }
     }

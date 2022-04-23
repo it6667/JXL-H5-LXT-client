@@ -1,0 +1,63 @@
+@import "../../../css/base.css";
+@import "../../../config/colorConfig";
+
+.bgc_box{
+  min-width: 1205px;
+  height: 190px;
+  background-image: url(../../../asset/images/teacher_back.png);
+
+  .content{
+    //background-color: oldlace;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .header{
+      width: 90px;
+      height: 90px;
+      box-shadow: 0 1px 3px #999;
+      border: 4px solid hsla(0,0%,98%,.6);
+
+
+      .header_img  {
+        height: 100%;
+        width: 100%;
+
+      }
+    }
+    .intro{
+      flex: 1;
+      margin-left: 10px;
+      //background-color: darkcyan;
+      //display: flex;
+
+      .tea_position{
+        font-size: 20px;
+        color: #fff;
+        //background-color: orchid;
+        //margin-bottom: 50px;
+
+        &.is_adstar::after{
+          content: "";
+          width: 18px;
+          height: 14px;
+          background-image: url(../../../asset/images/star.png) ;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+
+          display: inline-block;
+          //background-color: red;
+          //position: absolute;
+        }
+      }
+
+      .tea_intro{
+        margin-top: 15px;
+        font-size: 14px;
+        color: #fff;
+        //background-color: greenyellow;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}

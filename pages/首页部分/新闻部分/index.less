@@ -240,136 +240,87 @@ body{
   }
 }
 
-.select_bar{
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+.news_bar{
   min-width: 1205px;
-  z-index: 1000;
-  height: 40px;
+  //width: 100%;
+  height: 50px;
   //background-color: oldlace;
   box-shadow: 0 5px 5px 0 rgba(0,0,0,.04);
-  background: linear-gradient(#f7f6f8,#fff 20%);
+
   .content{
+    //background-color: pink;
     height: 100%;
-    //background-color: orange;
-
-    dl{
-      height: 100%;
+    .de_content{
       display: flex;
-      align-items: center;
-      //background-color: orchid;
+      //background-color: darkcyan;
+      height: 100%;
+      li{
+        height: 100%;
+        //background-color: orange;
+        padding: 0 5px;
+        display: flex;
+        a{
+          display: block;
+          //background-color: greenyellow;
+          line-height: 50px;
+          font-size: 16px;
+          color: #666;
 
-      dt{
-        color: #949fab;
-        font-size: 16px;
-      }
+          &:hover{
+            color: @themeColor;
+          }
 
-      dd{
-        color: #6b6578;
-        margin-left: 15px;
-        line-height: 30px;
-        padding: 0 10px;
-        border: 2px solid transparent;
-        &.selected,
-        &:hover{
-          color: @themeColor;
-
-          border: 2px solid @themeColor;
-          border-radius: 15px;
+        }
+        &:not(:first-child)::before{
+          content: ">";
+          line-height: 50px;
         }
       }
     }
+
   }
 }
 
 
 
-.tz_card{
-
-
-  .t_card{
-    margin-top:30px;
-    background-color: #fff;
-  //background-color: cornsilk;
-  .intro{
-    height: 80px;
-    //background-color: yellow;
+.news_items{
+  margin-bottom: 50px;
+  padding:0 0 10px 10px;
+  //background-color: orange;
+  border-bottom: 1px solid #999;
+  .top{
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    //background-color: oldlace;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding: 0 10px;
-    .detail{
-      flex: 1;
-      //background-color: pink;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      .t_image{
-        width: 60px;
-        height: 60px;
-        border-radius: 30px;
-        //background-color: orange;
-        //border: 1px solid @themeColor;
-        box-sizing: border-box;
-      }
-      .position{
-        //background-color: grey;
-        flex: 1;
-        height: 80%;
-        margin: 20px 0 0 15px;
-
-        .po_detail{
-          font-size: 18px;
-          color: #424242;
-
-          &.is_star::after{
-            content: "星级讲师";
-            font-size: 12px;
-            color: #a5571b;
-            background-color: #ffd2af;
-            padding: 0 5px;
-            border-radius: 3px;
-            margin-left: 10px;
-          }
-        }
-        .count{
-          font-size: 12px;
-          color: #999;
-          margin-top: 8px;
-        }
-      }
+    .txt{
+      font-size: 16px;
+      color: #424242;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
-    .to_detail{
-      width: 98px;
-      height: 34px;
-      //background-color: purple;
-
-      a{
-        text-align: center;
-        display: block;
-        line-height: 34px;
-        color: @themeColor;
-        border: 1px solid @themeColor;
-        border-radius: 5px;
-
-      }
+    .time{
+      min-width: 190px;
+      font-size: 14px;
+      color: #999;
+      text-align: right;
     }
   }
-  .desc{
-    height: 80px;
-    //background-color: greenyellow;
-
-    .z_desc{
-      line-height: 30px;
-      display: inline-block;
-      letter-spacing: 2px;
-      text-shadow: -1px 2px 3px grey;
-    }
+  .bottom{
+    font-size: 14px;
+    color: #999;
+    min-height: 60px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-indent: 2em;
   }
-}}
+}
 
-.bottom{
+.new_bottom{
   margin-top:50px;
   //width: 100%;
   height: 185px;

@@ -245,8 +245,8 @@ body{
   position: -webkit-sticky;
   top: 0;
   min-width: 1205px;
-  z-index: 1000;
   height: 40px;
+  z-index: 1000;
   //background-color: oldlace;
   box-shadow: 0 5px 5px 0 rgba(0,0,0,.04);
   background: linear-gradient(#f7f6f8,#fff 20%);
@@ -282,92 +282,223 @@ body{
     }
   }
 }
+.bgc_box{
+  min-width: 1205px;
+  height: 190px;
+  background-image: url(../../../asset/images/teacher_back.png);
 
-
-
-.tz_card{
-
-
-  .t_card{
-    margin-top:30px;
-    background-color: #fff;
-  //background-color: cornsilk;
-  .intro{
-    height: 80px;
-    //background-color: yellow;
+  .content{
+    //background-color: oldlace;
+    height: 100%;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding: 0 10px;
-    .detail{
-      flex: 1;
-      //background-color: pink;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      .t_image{
-        width: 60px;
-        height: 60px;
-        border-radius: 30px;
-        //background-color: orange;
-        //border: 1px solid @themeColor;
-        box-sizing: border-box;
+
+    .header{
+      width: 90px;
+      height: 90px;
+      box-shadow: 0 1px 3px #999;
+      border: 4px solid hsla(0,0%,98%,.6);
+
+
+      .header_img  {
+        height: 100%;
+        width: 100%;
+
       }
-      .position{
-        //background-color: grey;
-        flex: 1;
-        height: 80%;
-        margin: 20px 0 0 15px;
+    }
+    .intro{
+      flex: 1;
+      margin-left: 10px;
+      //background-color: darkcyan;
+      //display: flex;
 
-        .po_detail{
-          font-size: 18px;
-          color: #424242;
+      .tea_position{
+        font-size: 20px;
+        color: #fff;
+        //background-color: orchid;
+        //margin-bottom: 50px;
 
-          &.is_star::after{
-            content: "星级讲师";
-            font-size: 12px;
-            color: #a5571b;
-            background-color: #ffd2af;
-            padding: 0 5px;
-            border-radius: 3px;
-            margin-left: 10px;
+        &.is_adstar::after{
+          content: "";
+          width: 18px;
+          height: 14px;
+          background-image: url(../../../asset/images/star.png) ;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+
+          display: inline-block;
+          //background-color: red;
+          //position: absolute;
+        }
+      }
+
+      .tea_intro{
+        margin-top: 15px;
+        font-size: 14px;
+        color: #fff;
+        //background-color: greenyellow;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+
+.section{
+  //height: 320px;
+  //background-color: olive;
+
+
+  &>.section_container{
+
+    display: flex;
+    flex-wrap: wrap;
+    //background-color: tomato;
+    //height: 300px;
+    //justify-content: left;
+    justify-content: space-between;
+    //width: 1205px;
+    &>.card_course{
+      margin-top: 30px;
+      width: 218px;
+      height: 252px;
+      background-color: #fff;
+      //margin: 100px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 1s linear 0s;
+      &:hover {
+        box-shadow: 1px 8px 10px 4px grey;
+        transform: translateY(-20px);
+      }
+      &>.image {
+        width: 100%;
+        height: 130px;
+        //background-color: darkcyan;
+        position: relative;
+        &>.tag {
+          width: 48px;
+          height: 23px;
+          /*background-color: cyan;*/
+          background-image: url(../../../asset/images/star_back.png);
+          background-position: -16px -57px;
+
+          font-size: 12px;
+          color: #fff;
+          text-align: center;
+          line-height: 23px;
+          position: absolute;
+          top: 5px;
+          left: 0;
+          z-index: 999;
+        }
+        &>a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          //background-color: palegreen;
+          overflow: hidden;
+          &>img {
+            width: 100%;
+            height: 100%;
+            transition: all 2s ease-in-out 0s;
+
+            &:hover {
+              transform: scale(1.5, 1.5);
+            }
+          }
+
+        }
+      }
+      &>.title {
+        flex: 2;
+        padding-left: 10px;
+        /*padding-top: 10px;*/
+        /*box-sizing: border-box;*/
+        /*background-color: pink;*/
+        &>a {
+          display: block;
+          font-size: 14px;
+          color: #333;
+          text-decoration: none;
+          margin-top: 10px;
+          &:hover {
+            color: tomato;
           }
         }
-        .count{
+      }
+      &>.score {
+        flex: 1;
+        /*background-color: green;*/
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        &>.star {
+          width: 57px;
+          height: 10px;
+          background-image: url(../../../asset/images/star_back.png);
+          background-position: -91px -58px;
+
+          &>.y_star {
+            height: 100%;
+            background-image: url(../../../asset/images/star_back.png);
+            background-position: -10px -158px;
+          }
+        }
+        &>.score_text {
           font-size: 12px;
-          color: #999;
-          margin-top: 8px;
+          color: #777986;
+          margin-left: 10px;
+        }
+      }
+      &>.zan {
+        flex: 1;
+        padding-left: 10px;
+        /*background-color: paleturquoise;*/
+        &>.good {
+          font-size: 16px;
+          color: #777986;
+
+          &::before {
+            margin-right: 5px;
+            color: tomato;
+          }
         }
       }
     }
-    .to_detail{
-      width: 98px;
-      height: 34px;
-      //background-color: purple;
-
-      a{
-        text-align: center;
-        display: block;
-        line-height: 34px;
-        color: @themeColor;
-        border: 1px solid @themeColor;
-        border-radius: 5px;
-
+    //老方法,这个重新定义每个卡片,减少冗余.
+    &>.conlum5{
+      width: ~"calc((100% - 4 * 30px) / 5)";
+      margin-bottom: 30px;
+      //height: 240px;
+      //background-color: yellowgreen;
+      &:not(:nth-child(5n+1)){
+        margin-left: 30px;
       }
     }
-  }
-  .desc{
-    height: 80px;
-    //background-color: greenyellow;
-
-    .z_desc{
-      line-height: 30px;
-      display: inline-block;
-      letter-spacing: 2px;
-      text-shadow: -1px 2px 3px grey;
+    .conlum3{
+      width: ~"calc((100% - 2 * 30px) / 3)";
+      margin-bottom: 30px;
+      height: 240px;
+      background-color: yellowgreen;
+      &:not(:nth-child(3n+1)){
+        margin-left: 30px;
+      }
     }
+    .conlum2{
+      width: ~"calc((100% - 1 * 30px) / 2)";
+      margin-bottom: 30px;
+      height: 240px;
+      background-color: yellowgreen;
+      &:not(:nth-child(2n+1)){
+        margin-left: 30px;
+      }
+    }
+
   }
-}}
+}
 
 .bottom{
   margin-top:50px;

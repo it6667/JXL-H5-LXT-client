@@ -1,0 +1,45 @@
+@import "../../../css/base.css";
+.bgc_box {
+  min-width: 1205px;
+  height: 190px;
+  background-image: url(../../../asset/images/teacher_back.png);
+}
+.bgc_box .content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.bgc_box .content .header {
+  width: 90px;
+  height: 90px;
+  box-shadow: 0 1px 3px #999;
+  border: 4px solid hsla(0, 0%, 98%, 0.6);
+}
+.bgc_box .content .header .header_img {
+  height: 100%;
+  width: 100%;
+}
+.bgc_box .content .intro {
+  flex: 1;
+  margin-left: 10px;
+}
+.bgc_box .content .intro .tea_position {
+  font-size: 20px;
+  color: #fff;
+}
+.bgc_box .content .intro .tea_position.is_adstar::after {
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url(../../../asset/images/star.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+}
+.bgc_box .content .intro .tea_intro {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=index.css.map */

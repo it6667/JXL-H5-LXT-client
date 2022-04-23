@@ -181,149 +181,90 @@ body {
   font-size: 14px;
   color: #666;
 }
-.select_bar {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+.news_bar {
   min-width: 1205px;
-  z-index: 1000;
-  height: 40px;
+  height: 50px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.04);
-  background: linear-gradient(#f7f6f8, #fff 20%);
 }
-.select_bar .content {
+.news_bar .content {
   height: 100%;
 }
-.select_bar .content dl {
+.news_bar .content .de_content {
+  display: flex;
   height: 100%;
-  display: flex;
-  align-items: center;
 }
-.select_bar .content dl dt {
-  color: #949fab;
-  font-size: 16px;
-}
-.select_bar .content dl dd {
-  color: #6b6578;
-  margin-left: 15px;
-  line-height: 30px;
-  padding: 0 10px;
-  border: 2px solid transparent;
-}
-.select_bar .content dl dd.selected,
-.select_bar .content dl dd:hover {
-  color: #51b257;
-  border: 2px solid #51b257;
-  border-radius: 15px;
-}
-.tz_card .t_card {
-  margin-top: 30px;
-  background-color: #fff;
-}
-.tz_card .t_card .intro {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  padding: 0 10px;
-}
-.tz_card .t_card .intro .detail {
-  flex: 1;
+.news_bar .content .de_content li {
   height: 100%;
-  display: flex;
-  align-items: center;
-}
-.tz_card .t_card .intro .detail .t_image {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  box-sizing: border-box;
-}
-.tz_card .t_card .intro .detail .position {
-  flex: 1;
-  height: 80%;
-  margin: 20px 0 0 15px;
-}
-.tz_card .t_card .intro .detail .position .po_detail {
-  font-size: 18px;
-  color: #424242;
-}
-.tz_card .t_card .intro .detail .position .po_detail.is_star::after {
-  content: "星级讲师";
-  font-size: 12px;
-  color: #a5571b;
-  background-color: #ffd2af;
   padding: 0 5px;
-  border-radius: 3px;
-  margin-left: 10px;
+  display: flex;
 }
-.tz_card .t_card .intro .detail .position .count {
-  font-size: 12px;
-  color: #999;
-  margin-top: 8px;
-}
-.tz_card .t_card .intro .to_detail {
-  width: 98px;
-  height: 34px;
-}
-.tz_card .t_card .intro .to_detail a {
-  text-align: center;
+.news_bar .content .de_content li a {
   display: block;
-  line-height: 34px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #666;
+}
+.news_bar .content .de_content li a:hover {
   color: #51b257;
-  border: 1px solid #51b257;
-  border-radius: 5px;
 }
-.tz_card .t_card .desc {
-  height: 80px;
+.news_bar .content .de_content li:not(:first-child)::before {
+  content: ">";
+  line-height: 50px;
 }
-.tz_card .t_card .desc .z_desc {
-  line-height: 30px;
-  display: inline-block;
-  letter-spacing: 2px;
-  text-shadow: -1px 2px 3px grey;
+.new_detail .title {
+  font-size: 22px;
+  color: #000;
+  text-align: center;
 }
-.bottom {
+.new_detail .time {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+.new_detail .content {
+  min-height: 300px;
+}
+.new_bottom {
   margin-top: 50px;
   height: 185px;
   background-color: #474443;
   box-sizing: border-box;
 }
-.bottom .content {
+.new_bottom .content {
   height: 100%;
   display: flex;
   padding-top: 40px;
   box-sizing: border-box;
 }
-.bottom .content .left {
+.new_bottom .content .left {
   flex: 1;
   height: 105px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.bottom .content .left .intro {
+.new_bottom .content .left .intro {
   font-size: 14px;
   color: #fff;
 }
-.bottom .content .left .contract {
+.new_bottom .content .left .contract {
   display: flex;
 }
-.bottom .content .left .contract li {
+.new_bottom .content .left .contract li {
   margin-right: 20px;
 }
-.bottom .content .left .contract li a {
+.new_bottom .content .left .contract li a {
   color: #fff;
   font-size: 14px;
 }
-.bottom .content .left .contract li a:hover {
+.new_bottom .content .left .contract li a:hover {
   color: #51b257;
 }
-.bottom .content .left .brand {
+.new_bottom .content .left .brand {
   font-size: 14px;
   color: #999;
 }
-.bottom .content .right {
+.new_bottom .content .right {
   flex: 1;
   height: 105px;
   text-align: right;
@@ -331,12 +272,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.bottom .content .right .ad_images {
+.new_bottom .content .right .ad_images {
   height: 46px;
   display: flex;
   justify-content: flex-end;
 }
-.bottom .content .right .ad_images .adl_images {
+.new_bottom .content .right .ad_images .adl_images {
   position: relative;
   width: 46px;
   height: 46px;
@@ -345,13 +286,13 @@ body {
   background-position: -112px -74px;
   cursor: pointer;
 }
-.bottom .content .right .ad_images .adl_images:hover {
+.new_bottom .content .right .ad_images .adl_images:hover {
   background-position: -154px -174px;
 }
-.bottom .content .right .ad_images .adl_images:hover .ewm_pane {
+.new_bottom .content .right .ad_images .adl_images:hover .ewm_pane {
   display: block;
 }
-.bottom .content .right .ad_images .adl_images .ewm_pane {
+.new_bottom .content .right .ad_images .adl_images .ewm_pane {
   width: 120px;
   height: 120px;
   box-shadow: 0 0 10px #ccc;
@@ -361,13 +302,13 @@ body {
   top: -125px;
   display: none;
 }
-.bottom .content .right .ad_images .adl_images .ewm_pane img {
+.new_bottom .content .right .ad_images .adl_images .ewm_pane img {
   height: 100%;
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
 }
-.bottom .content .right .adr_images {
+.new_bottom .content .right .adr_images {
   position: relative;
   width: 46px;
   height: 46px;
@@ -375,13 +316,13 @@ body {
   background-position: -220px -174px;
   cursor: pointer;
 }
-.bottom .content .right .adr_images:hover {
+.new_bottom .content .right .adr_images:hover {
   background-position: -286px -174px;
 }
-.bottom .content .right .adr_images:hover .ewm_pane {
+.new_bottom .content .right .adr_images:hover .ewm_pane {
   display: block;
 }
-.bottom .content .right .adr_images .ewm_pane {
+.new_bottom .content .right .adr_images .ewm_pane {
   width: 120px;
   height: 120px;
   box-shadow: 0 0 10px #ccc;
@@ -391,22 +332,22 @@ body {
   top: -125px;
   display: none;
 }
-.bottom .content .right .adr_images .ewm_pane img {
+.new_bottom .content .right .adr_images .ewm_pane img {
   height: 100%;
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
 }
-.bottom .content .server {
+.new_bottom .content .server {
   font-size: 14px;
   color: #fff;
 }
-.bottom .content .server .time {
+.new_bottom .content .server .time {
   font-size: 12px;
   color: #ddd;
   padding-left: 10px;
 }
-.bottom .content .tel {
+.new_bottom .content .tel {
   font-size: 19px;
   color: #fff;
   font-weight: bold;

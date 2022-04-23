@@ -1,0 +1,32 @@
+@import "../../../css/base.css";
+.news_bar {
+  min-width: 1205px;
+  height: 50px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.04);
+}
+.news_bar .content {
+  height: 100%;
+}
+.news_bar .content .de_content {
+  display: flex;
+  height: 100%;
+}
+.news_bar .content .de_content li {
+  height: 100%;
+  padding: 0 5px;
+  display: flex;
+}
+.news_bar .content .de_content li a {
+  display: block;
+  line-height: 50px;
+  font-size: 16px;
+  color: #666;
+}
+.news_bar .content .de_content li a:hover {
+  color: #51b257;
+}
+.news_bar .content .de_content li:not(:first-child)::before {
+  content: ">";
+  line-height: 50px;
+}
+/*# sourceMappingURL=index.css.map */
